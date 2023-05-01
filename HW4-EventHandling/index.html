@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html> 
+
+<head>
+    <meta charset=utf-8/>
+
+    <!-- CSS for styling -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- add title -->
+    <title>HW-04</title>
+</head>
+
+
+<body>
+
+    <h1 class="center">hw-04: Event Handling</h1>
+
+    <div class="parent">
+        <div id="left">
+            <svg id="frame">
+                <rect class='axis' x="90" y="50" width="10px" height="310px"/>
+                <rect class='axis' x="90" y="350" width="310px" height="10px"/>
+              
+                <!-- (9,9)-->
+                <circle class="point" cx="370" cy="80" r="10"/>
+               
+                <!-- (6,2)-->
+                <circle class="point" cx="280" cy="290" r="10"/>
+
+                <!-- (2,4)-->
+                <circle class="point" cx="160" cy="230" r="10"/>
+               
+                <!-- (1,2)-->
+                <circle class="point" cx="130" cy="290" r="10"/>
+
+            </svg>
+        </div>
+
+        <div id="right">
+            <form id="choose-cords">
+                <label for="x">Select the x-coordinate for the point you want to add:</label>
+                <select name="x" id="x">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+            <br><br>
+                <label for="y">Select the y-coordinate for the point you want to add:</label>
+                <select name="y" id="y">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+            </form>
+            <br><br>
+            <button type="button" id="subButton">Submit</button>
+            <br><br>
+             <!-- div for coordinate text -->
+            <div id="coords"> 
+            </div>
+        </div>
+
+    </div>
+
+    <h2 class="center">Acknowledgements</h2>
+    <div> 
+        <ul>
+            <li><a href="https://stackoverflow.com/questions/3301688/how-do-you-get-the-currently-selected-option-in-a-select-via-javascript"  target="_blank">https://stackoverflow.com/questions/3301688/how-do-you-get-the-currently-selected-option-in-a-select-via-javascript</a></li>
+            <li><a href=https://gist.run/?id=976c7c65b7b9f68272ce748678864aa3 target="_blank">https://gist.run/?id=976c7c65b7b9f68272ce748678864aa3</a></li>
+            <li><a href=https://stackoverflow.com/questions/19655189/javascript-click-event-listener-on-class  target="_blank">https://stackoverflow.com/questions/19655189/javascript-click-event-listener-on-class</a></li>
+        </ul>
+    </div>
+
+
+<!-- js file for functionality -->
+<script src="main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+body {
+    font-family: Arial;
+}
+
+.center {
+    text-align: center;
+}
+
+#dstypes {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#headrow {
+    background-color: aqua;
+}
+
+.Parent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    object-fit: contain;
+}
+
+.child1 {
+    color: #000000;
+    object-fit: contain;
+    width: 50%;
+    padding-bottom: 10px;
+    
+}
+
+.child2 {
+    color: #000000;
+    object-fit: contain;
+    width: 50%;
+
+}
+
+img {
+    object-fit: contain;
+    max-width: 100%;
+}
+
+#decoration {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.square:hover {
+    fill: crimson;
+}
+
+.square {
+    stroke-width: 5px;
+    stroke: black;
+}
+
+.circle:hover {
+    stroke-width: 5px;
+    stroke: black;
+}

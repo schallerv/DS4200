@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html> 
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset=utf-8/>
+    <title>hw-02</title>
+</head>
+
+<body>
+
+    <div id="data-abstraction">
+        <div class="info">
+            <h1 class="center">Dataset Types</h1>
+            <table id="dstypes">
+                <tr id="headrow">
+                    <th>Data</th>
+                    <th>Link</th>
+                    <th>Dataset Type</th>
+                </tr>
+                <tr class="center">
+                    <td>UFO</td>
+                    <td><a href= data/UFO.csv target="_blank">link</a></td>
+                    <td>Network/Tree</td>
+                </tr>
+                <tr class="center">
+                    <td>Airports</td>
+                    <td><a href= data/Airports.csv target="_blank">link</a></td>
+                    <td>Table</td>
+                </tr>
+                <tr class="center">
+                    <td>Google-Web</td>
+                    <td><a href= data/Google-Web.txt target="_blank">link</a></td>
+                    <td>Table</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="info">
+            <h1 class="center">Data Types</h1>
+            <h2>UFO</h2>
+            <ul>
+                <li>Row Data Type: Item</li>
+                <li>Column Data Types: Attributes</li>
+                <li>Datetime</li>
+                <ul>
+                <li style="list-style-type:circle">Ordered Sequential</li>
+                </ul>
+                <li>City</li>
+                <ul>
+                <li style="list-style-type:circle">Categorical</li>
+                </ul>
+                <li>State</li>
+                <ul>
+                <li style="list-style-type:circle">Categorical</li>
+                </ul>
+                <li>Country</li>
+                <ul>
+                <li style="list-style-type:circle">Categorical</li>
+                </ul>
+                <li>Shape</li>
+                <ul>
+                <li style="list-style-type:circle">Categorical</li>
+                </ul>
+                <li>Duration (seconds)</li>
+                <ul>
+                <li style="list-style-type:circle">Ordered Sequential</li>
+                </ul>
+            </ul>
+            <h2>Airports</h2>
+            <ul>
+                <li>Row Data Type: Item</li>
+                <li>Column Data Types: Attributes</li>
+                <li>Airport Name</li>
+                <ul>
+                    <li style="list-style-type:circle">Categorical</li>
+                </ul>
+                <li>Latitude</li>
+                <ul>
+                    <li style="list-style-type:circle">Position</li>
+                </ul>
+                <li>Longitude</li>
+                <ul>
+                <li style="list-style-type:circle">Position</li>
+                </ul>
+            </ul>
+            <h2>Google-Web</h2>
+            <ul>
+                <li>Row Data Type: Link</li>
+                <li>Column Data Types: Attributes</li>
+                <li>FromNodeID</li>
+                <ul>
+                <li style="list-style-type:circle">Categorical</li>
+                </ul>
+                <li>ToNodeID</li>
+                <ul>
+                <li style="list-style-type:circle">Categorical</li>
+                </ul>
+            </ul>
+        </div>
+    </div>
+
+    <div id="task-abstraction">
+        <h1 class="center">Task Abstraction</h1>
+        <div class="Parent">
+            <div class="child1">
+                <img src="img/vis1.png">
+                <p>High Level: Consume -> Present </p>
+                <p>- the visualization is intended for the viewers to see the data not produce, there is not much for viewers to explore, simply to view the data </p>
+                <p>Medium Level: Search -> Browse</p>
+                <p>- the viewers do not have a specific target, but the can use the axis to find data at a desired location (for example: the last 3 days)</p>
+                <p>Low Level: Query -> Summarize</p>
+                <p>- presents all of the data for users to view</p>
+                <p>Target: All Data -> Trends(Attribute -> Correlation)</p>
+                <p>- users can figure out trends of the data and derive beliefs about any correlation</p>
+            </div>
+            <div class="child2">
+                <img src="img/vis2.png">
+                <p>High Level: Consume -> Discover</p>
+                <p>- the visualization is intended for the viewers to see the data not produce, presents data in a way that allows viewers to create comparisons and draw conclusions </p>
+                <p>Medium Level: Search -> Lookup</p>
+                <p>- the viewers have a specific target and location, the viewer knows where to find the data and compares for specific time periods</p>
+                <p>Low Level: Query -> Compare</p>
+                <p>- presents specific data for users to compare between the two cities</p>
+                <p>Target: Attributes -> Similarity</p>
+                <p>- users derive comparisons from the data presented in the visualization</p>
+            </div>
+    </div>
+
+    <div id="decoration">
+        <svg width="110" height="110">
+            <circle class="circle" cx="55" cy="55" r="50" fill="cornflowerblue" fill-opacity= "0.5"/>
+        </svg>
+        <svg width="100" height="100">
+            <rect class="square" width="100" height="100" fill="blue"/>
+        </svg>
+        <svg width="110" height="110">
+            <circle class="circle" cx="55" cy="55" r="50" fill="cornflowerblue" fill-opacity= "0.5"/>
+        </svg>
+        <svg width="100" height="100">
+            <rect class="square" width="100" height="100" fill="blue" stroke-width:5px stroke:rgb(0,0,0)/>
+        </svg>
+        <svg width="110" height="110">
+            <circle class="circle" cx="55" cy="55" r="50" fill="cornflowerblue" fill-opacity= "0.5"/>
+        </svg>
+    </div>
+
+    <h3 class="center">Acknowledgements</h3>
+    <div id="acknowledgements">
+        <ul>
+        <li><a href=https://www.w3schools.com/html/default.asp  target="_blank">https://www.w3schools.com/html/default.asp</a></li>
+        <li><a href=https://css-tricks.com/change-color-of-svg-on-hover/  target="_blank">https://css-tricks.com/change-color-of-svg-on-hover/</a></li>
+        <li><a href=https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-browser-support  target="_blank">https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-browser-support</a></li>
+        </ul>
+    </div>
+    
+</body>
+
+</html>

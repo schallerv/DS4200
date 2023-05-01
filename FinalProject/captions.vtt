@@ -1,0 +1,72 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:06.720 --> 00:00:12.480
+So when you first open our page, it generates&nbsp;
+a lot of text which gives context as to why we&nbsp;&nbsp;
+
+00:00:12.480 --> 00:00:17.220
+created this project and some background&nbsp;
+to our data and where we obtained it.&nbsp;&nbsp;
+
+00:00:18.060 --> 00:00:22.560
+So here is our visualization for our user and&nbsp;
+it is composed of three parts, with the first&nbsp;&nbsp;
+
+00:00:22.560 --> 00:00:27.900
+part being the main visualization here that&nbsp;
+graphs different economic indicators over time.&nbsp;&nbsp;
+
+00:00:29.400 --> 00:00:35.760
+Looking at its percent of its maximum value,&nbsp;
+and some cool features of our graphs would be&nbsp;&nbsp;
+
+00:00:35.760 --> 00:00:41.820
+a tooltip that gives the instantaneous date&nbsp;
+and value of wherever the user wants to look&nbsp;&nbsp;
+
+00:00:41.820 --> 00:00:48.360
+at. It has these grey bars here which indicate&nbsp;
+recessions so this will allow for our user to see&nbsp;&nbsp;
+
+00:00:49.740 --> 00:00:56.160
+the patterns of the different indicators and&nbsp;
+how they lead to a recession. And another cool&nbsp;&nbsp;
+
+00:00:56.160 --> 00:01:01.620
+feature would be the slider. So let's say our user&nbsp;
+wants to take a closer look at the for example,&nbsp;&nbsp;
+
+00:01:01.620 --> 00:01:09.720
+the economic recession of 2001. The user can&nbsp;
+just select and brush the time frame at what&nbsp;&nbsp;
+
+00:01:09.720 --> 00:01:15.660
+they want to look at and it updates the main vis&nbsp;
+and gives the user a closer look at the visual.&nbsp;&nbsp;
+
+00:01:16.860 --> 00:01:23.460
+Our next visualization is here on the right&nbsp;
+which graphs each indicator individually so&nbsp;&nbsp;
+
+00:01:24.780 --> 00:01:32.820
+it changes with the dropdown menu and again its&nbsp;
+over the same span of years and each indicator&nbsp;&nbsp;
+
+00:01:32.820 --> 00:01:37.320
+has a different y-value that correlates&nbsp;
+with the indicator and how it's measured.&nbsp;&nbsp;
+
+00:01:37.920 --> 00:01:42.240
+And when selecting from the dropdown,&nbsp;
+not only does it change the graph here,&nbsp;&nbsp;
+
+00:01:42.240 --> 00:01:47.220
+but it changes the text down below which&nbsp;
+pretty much tells the user for example,&nbsp;&nbsp;
+
+00:01:47.220 --> 00:01:54.480
+what PPI is and how it can lead to a&nbsp;
+potential recession. Thank you guys!
+

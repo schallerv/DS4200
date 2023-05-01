@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html> 
+
+<head>
+    <meta charset=utf-8/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="js/d3.v6.1.1/d3.min.js"></script>
+    <title>economicmomentum</title>
+</head>
+
+<body>
+
+    <h1>Helping Predict Momentum in the Economy</h1>
+
+    <div>
+        <h2>Motivation</h2>
+        <p >To address the domain problem of analyzing economic data and its correlation with the health of the overall economy, we have developed a tool that visualizes patterns of economic metrics like CPI, PPI, nonfarm payrolls, etc. against the growth of the US economy. Our end users include students, professors, economists, and anyone interested in the economy and financial markets. By analyzing previous economic recessions and comparing them with present-day data, our tool helps users draw conclusions about which factors are most impactful to an economic recession. Knowing when an economic recession is going to occur before it happens can potentially lessen the impacts to millions of U.S citizens, and our tool can help users avoid financial losses by getting out of the market before it crashes.</p>
+        <p>When looking from an investors perspective, the longer they stay invested in the market during a recession the more money they lose. By using our tool, the user would be able to avoid this and get out of the market before it crashes. Which would drastically save their investment. Whether it be a retirement fund or personal portfolio. 
+        </p>
+        <p>
+        As many of us college students are taking out loans or investing in the stock market, the knowledge of an incoming recession would help us all out and save us from a potential costly situation. Not only college students but an economic recession would affect everyone in one way or another.
+        </p>
+        <p>
+        We want to look at data from previous economic recessions and compare them with each other as well as present day. This will help us build an understanding of the economic factor that can lead to a recession by looking at previous patterns of data, we can use them to predict what potentially could occur in the future.</p>
+    </div>
+    <div>
+        <h2>Background</h2>
+        <h3>Data</h3>
+        <p>
+        Our visualization tool is designed to provide insights into the US economy by utilizing data from the Federal Reserve Economic Data (FRED). We use key economic metrics such as the Consumer Price Index (CPI), Producer Price Index (PPI), nonfarm payrolls, unemployment rate, and unemployment claims to showcase their correlation with the overall health of the US economy. 
+    </p>
+        <p>
+        The tool presents multiple line charts that allow users to visualize these different economic metrics. It features a slider that enables users to adjust the time period they wish to view and a toggle function for each indicator, allowing users to focus on specific metrics of interest. 
+    </p>
+        <p>
+        By leveraging FRED data, our visualization tool offers users a reliable and trustworthy source of economic information. It provides an intuitive way to explore the correlations between various economic indicators and the overall health of the US economy, making it a valuable resource for researchers, analysts, and anyone interested in understanding the state of the US economy.
+        </p>
+
+        <p>
+        FRED is a reliable source of economic data, but it has potential biases. Sampling bias may arise since data is collected from various sources, which can lead to a bias towards certain regions, industries, or demographics. Measurement bias is another issue since the methods used to collect and measure economic data may be biased, leading to inaccuracies in any analysis. Additionally, FRED may have missing data bias, and some economic data may have a time lag, leading to biases in real-time data analysis. Despite these potential biases, FRED is still widely considered to be a trustworthy source of economic data. The Federal Reserve takes great care to ensure that the data is accurate and unbiased, and the dataset is subject to constant review and quality control checks. Additionally, many researchers and analysts have developed methods to account for potential biases in this data, which continuously helps to mitigate any issues that may arise.
+        </p>
+        <p>
+        It is important to note that we did not encounter any quality issues with the data used in our visualization tool. However, it is worth mentioning that the record keeping for some of the metrics we used, such as the Consumer Price Index (CPI) and the Producer Price Index (PPI), only began in 1986. Additionally, we do not have the most recent two years of data, as it takes time for government agencies to collect and release economic data. Despite these limitations, we believe that the data available to us is still highly informative and useful for analyzing economic trends over time.
+        </p>
+        <p>
+        The raw data we use is publicly available on the FRED website:
+        <a href = "https://fred.stlouisfed.org/"> FRED Data</a>
+        </p>
+        
+        <h3>Demo Video</h3>
+        <p>
+            <video id="video" controls preload="metadata">
+                  <source src="Predicting EconomicMomentum.mp4" type="video/mp4" />
+                  <track
+                    label="English"
+                    kind="subtitles"
+                    srclang="en"
+                    src="captions.vtt"
+                    default />
+            </video>
+        </p>
+
+        <h3>Report</h3>
+        <p>
+            <a href = "4200_report.pdf">Link to Report</a>
+        </p>
+
+
+
+    </div>
+
+    <div>
+        <h2>Visualization</h2>
+
+        <div class="background">
+        <h3 class="paddingleft">Economic Indicators Between 1986 and 2021</h3>
+
+            <!-- div to hold main visual, dropdown, detail vis, and info box-->
+            <div id="topvis">
+
+            <div id="left" class="toprightoutline">
+                <!-- div to hold main visual-->
+                <div id="mainvis"></div>
+
+                <!-- div to hold years slider-->
+                <div id="slider">
+                </div>
+
+            </div>
+            
+
+            <!-- div to hold dropdown, detail vis, and info box-->
+            <div id="detailvis" class="topoutline">
+
+                <!-- div to hold dropdown for focus selection-->
+                <div id="indicatorselection">
+                    <form id="selectedindicator">
+                        <label for="indicators_form">Select an indicator:</label>
+                        <select name="indicators_form" id="indicators">
+                            <option value="payrolls">Payroll</option>
+                            <option value="urate">Unemployment Rate</option>
+                            <option value="cpi">CPI</option>
+                            <option value="ppi">PPI</option>
+                            <option value="uclaims">Unemployment Claims</option>
+                        </select>
+                    </form>    
+                </div>
+
+                <!-- div to hold detailed focus graph-->
+                <div id="detailgraph" >
+                </div>
+
+                <!-- div to hold information box-->
+                <div id="infobox">
+                    <div>
+                        <p id="indicatorinfotext"></p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        </div>
+
+    </div>
+
+    <div>
+        <h2>Acknowledgements</h2>
+
+        <ul>
+            <li>
+                <a href = "https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_select">Drop Down Lists</a>
+            </li>
+
+            <li>
+                <a href = "https://www.computerhope.com/issues/ch001392.htm">Color Borders Around Text</a>
+            </li>
+
+            <li>
+                <a href = "https://data-flair.training/blogs/javascript-event-types/">JS Event Types</a>
+            </li>
+
+            <li>
+                <a href = "https://www.tutorialspoint.com/How-to-show-the-index-of-the-selected-option-in-a-dropdown-list-with-JavaScript">Indexing Options in a Dropdown</a>
+            </li>
+
+            <li>
+                <a href = "https://fred.stlouisfed.org/series/CPIAUCSL">CPI Data</a>
+            </li>
+
+            <li>
+                <a href = "https://www.bls.gov/ppi/overview.htm#:~:text=Additional%20information-,Data,the%20perspective%20of%20the%20seller.">PPI Data</a>
+            </li>
+
+            <li>
+                <a href = "https://fred.stlouisfed.org/series/UNRATE">Unemployement Data</a>
+            </li>
+
+            <li>
+                <a href = "https://fred.stlouisfed.org/series/ICSA">Jobless Claims Data</a>
+            </li>
+
+            <li>
+                <a href = "https://fred.stlouisfed.org/series/PAYEMS"> Payroll Data </a>
+            </li>
+
+            <li>
+                <a href = "https://www.geeksforgeeks.org/how-to-clear-all-divs-content-inside-a-parent-div/?ref=rp"> Clearing Divs in a Parent Div</a>
+            </li>
+        </ul>
+
+    
+    </div>
+
+
+    <script src="js/main.js"></script>
+    <script src="js/detail.js"></script>
+</body>
+
+</html>

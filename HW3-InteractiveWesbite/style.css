@@ -1,0 +1,36 @@
+html {
+    font-family: Arial;
+}
+
+.center {
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    object-fit: contain;
+}
+
+.parent {
+    display: flex;
+    flex-direction: row;
+    object-fit: contain;
+}
+
+.image {
+    width: 50%;
+    padding-right: 10px;
+    object-fit: contain;
+}
+
+.text {
+    width: 50%;
+    padding-left: 10px;
+}
+
+img {
+    max-width: 100%;
+    align-items: center;
+}

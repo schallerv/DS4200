@@ -1,0 +1,56 @@
+body {
+    font-family: Arial; 
+}
+
+.center {
+    text-align: center;
+}
+
+.parent {
+    display: flex;
+    flex-direction: row;
+    object-fit: contain;
+}
+
+#left {
+    width: 60%;
+    padding-right: 10px;
+    object-fit: contain;
+}
+
+#right {
+    width: 40%;
+    padding-right: 10px;
+    object-fit: contain;
+}
+
+
+#frame {
+    width: 500px;
+    height: 380px;
+    margin-left: 10%;
+}
+
+.point {
+    fill:hotpink;
+}
+
+.point:hover {
+    fill:deeppink;
+}
+
+.borderPoint {
+    fill:hotpink;
+    stroke-width: 5px;
+    stroke: black;
+}
+
+.borderPoint:hover {
+    fill:deeppink;
+    stroke-width: 5px;
+    stroke: black;
+}
+
+.axis {
+    fill: black;
+}

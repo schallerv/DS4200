@@ -1,0 +1,216 @@
+/* general styling */
+body {
+    font-family: Arial;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+
+
+/* making flexboxes */
+#topvis {
+    display: flex;
+    flex-direction: row;
+    object-fit: contain;
+    height:625px;
+}
+
+.background {
+    background-color: rgb(249, 249, 249);
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+}
+
+#left {
+    display: flex;
+    flex-direction: column;
+    width: 62%;
+    object-fit: contain;
+}
+
+#detailvis {
+    display: flex;
+    flex-direction: column;
+    width: 38%;
+    object-fit: contain;
+}
+
+#mainvis {
+    height: 83%;
+    object-fit: contain;
+    justify-items: center;
+}
+
+#slider {
+    height: 17%;
+    object-fit: contain;
+}
+
+
+#indicatorselection {
+    height: 5%;
+    object-fit: contain;
+    padding-left: 10px;
+}
+
+#detailgraph {
+    height: 60%;
+    object-fit: contain;
+}
+
+#infobox {
+    height: 40%;
+    object-fit: contain;
+    overflow: auto;
+    padding-left: 10px;
+}
+
+
+
+/* line styling for visuals */
+.Payroll {
+    /*stroke: lightsalmon;*/
+    stroke: rgb(49, 49, 183);
+    stroke-width: 3px;
+    fill: none;
+    opacity: 100%;
+    z-index: 0;
+}
+
+.CPI {
+    /*stroke: lightsteelblue;*/
+    stroke: rgb(27, 139, 27);
+    stroke-width: 3px;
+    fill: none;
+    opacity: 100%;
+    z-index: 0;
+}
+
+.PPI {
+    /*stroke: aquamarine;*/
+    stroke: rgba(211, 23, 23, 0.824);
+    stroke-width: 3px;
+    fill: none;
+    opacity: 100%;
+    z-index: 0;
+}
+
+.Unemployment_Claims {
+    /*stroke: palegreen;*/
+    stroke: purple;
+    stroke-width: 3px;
+    fill: none;
+    opacity: 100%;
+    z-index: 0;
+}
+
+.Unemployment_Rate {
+    /*stroke: thistle;*/
+    stroke: rgb(237, 138, 0);
+    stroke-width: 3px;
+    fill: none;
+    opacity: 100%;
+    z-index: 0;
+}
+
+.slidepayroll {
+    stroke: rgb(49, 49, 183);
+    stroke-width: 1px;
+    fill: none;
+    opacity: 100%;
+}
+
+.slidecpi {
+    stroke: rgb(27, 139, 27);
+    stroke-width: 1px;
+    fill: none;
+    opacity: 100%;
+}
+
+.slideppi {
+    stroke: rgba(211, 23, 23, 0.824);
+    stroke-width: 1px;
+    fill: none;
+    opacity: 100%;
+}
+
+.slideclaims {
+    stroke: purple;
+    stroke-width: 1px;
+    fill: none;
+    opacity: 100%;
+}
+
+.slideurate {
+    stroke: rgb(237, 138, 0);
+    stroke-width: 1px;
+    fill: none;
+    opacity: 100%;
+}
+
+.slideline {
+    stroke:black;
+    stroke-width: 1px;
+    fill: none;
+}
+
+.recession_bar {
+    fill: grey;
+    fill-opacity: 50%;
+}
+
+/* tootltip styling */
+.tooltip{
+  position: absolute;
+  border:  solid;
+  border-color: black;
+  color: white;
+  border-width: 3px;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.recession_tooltip {
+  position: absolute;
+  border:  solid;
+  border-color: black;
+  color: white;
+  background-color: grey;
+  border-width: 3px;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 5px; 
+}
+
+.fulloutline {
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+}
+
+.toprightoutline {
+    border-top-width: 2px;
+    border-top-style: solid;
+    border-top-color: black;
+    border-right-width: 2px;
+    border-right-style: solid;
+    border-right-color: black;
+}
+
+.topoutline {
+    border-top-width: 2px;
+    border-top-style: solid;
+    border-top-color: black;
+}
+
+.paddingleft {
+    padding-left: 5px;
+}

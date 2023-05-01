@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html> 
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset=utf-8/>
+    <title>HW-03</title>
+</head>
+
+<body>
+<h1 class="center">HW-03: Interactive Webpage, and Marks & Channels</h1>
+<div class="center">
+    <button type="button" onclick="GetDate()">What is the date & time?</button>
+</div>
+<div id="button-div" class="center">
+    <p></p>
+</div>
+
+<div class="main">
+    <div class="parent">
+        <div class="image">
+            <img src="img/vis1.png">
+        </div>
+        <div class="text">
+            <h2>Marks</h2>
+            <ul>
+                <li>Area (the map of the United States)</li>
+                <li>Area (electoral votes total box)</li>
+            </ul>
+            <h2>Channels</h2>
+            <ul>
+                <li>Colors</li>
+                <ul>
+                    <li>red v. blue (representing the party of each candidate)</li>
+                    <li>this is good mapping because these colors are significantly different from each other and these colors are recognizable to the audience</li>
+                </ul>
+                <li>Size (Area)</li>
+                <ul>
+                    <li>the area of each candidate of the total votes box for electoral votes needed</li>
+                    <li>this is good mapping because it provides a spacial significance to how many more votes Clinton would have</li>
+                </ul>
+            </ul>
+            <h2>Colormap(s)</h2>
+            <ul>
+                <li>Categorical</li>
+                <ul>
+                    <li>the colors chosen to represent each candidate are commonly used for their parties and easily distinguishable</li>
+                </ul>
+            </ul>
+        </div>
+    </div>
+    <div class="parent">
+        <div class="image">
+            <img src="img/vis2.png">
+        </div>
+        <div class="text">
+            <h2>Marks</h2>
+            <ul>
+                <li>Points(each batted ball is represented by a point on the graph)</li>
+                <li>Lines (there are horizontal lines representing each classification of the hit (pop-ups, fly balls, line drives, and ground balls)) </li>
+            </ul>
+            <h2>Channels</h2>
+            <ul>
+                <li>Position (horizontal and vertical)</li>
+                <ul>
+                    <li>represents the launch angle and exit velocity of each batted ball</li>
+                    <li>this is good mapping because viewers can determine the launch angle and exit velocity of each ball easily</li>
+                </ul>
+                <li>Color</li>
+                <ul>
+                    <li>each ball is classified by color according the scale at the top-left of the visualization for its scoring value (purple-> white-> orange)</li>
+                    <li>this is good mapping because it adds a level of depth to the information and visualizes the "sweet spot" of batted balls</li>
+                </ul>
+            </ul>
+            <h2>Colormap(s)</h2>
+            <ul>
+                <li>Divergent</li>
+                <ul>
+                    <li>the classification of each ball (purple-> white-> orange) is a divergent color map due to white being the pivot point with purple representing below average and orange above average</li>
+                    <li>one aspect of this colormap that we would change is to change the midpoint color to be slightly more diffentiable from the background (where there is no data)</li>
+                </ul>
+                <li>Sequential</li>
+                <ul>
+                    <li>for the purple and orange sides of the midpoint, the darker the color the further from the midpoint</li>
+                </ul>
+            </ul>
+        </div>
+    </div>
+    <div class="parent">
+        <div class="image">
+            <img src="img/vis3.png">
+        </div>
+        <div class="text">
+            <h2>Marks</h2>
+            <ul>
+                <li>Points(each cereal brand is represented by a point on the graph)</li>
+            </ul>
+            <h2>Channels</h2>
+            <ul>
+                <li>Position (horizontal and vertical)</li>
+                <ul>
+                    <li>represents the calories and sugar content of each cereal</li>
+                    <li>this is good mapping because viewers can determine the calories and sugar content of each cereal easily</li>
+                </ul>
+                <li>Color</li>
+                <ul>
+                    <li>each cereal is classified by color according to the key at the bottom of the visualization for its calorie to sugar content ratio</li>
+                    <li>this is good mapping because it adds a level of depth to the information and visualizes which cereals have low calories relative to their sugar content</li>
+                </ul>
+            </ul>
+            <h2>Colormap(s)</h2>
+            <ul>
+                <li>Categorical</li>
+                <ul>
+                    <li>the colors chosen to represent a high or low calorie:sugar ratio easily distinguishable with orange representing low ratios and blue high ratios</li>
+                </ul>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<h2 class="center">Acknowledgements</h2>
+<p><a href="https://www.kaggle.com/datasets/crawford/80-cereals?resource=download"  target="_blank">https://www.kaggle.com/datasets/crawford/80-cereals?resource=download</a></p>
+<p><a href=https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-browser-support  target="_blank">https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-browser-support</a></p>
+<p><a href=https://www.w3schools.com/jsref/event_onclick.asp  target="_blank">https://www.w3schools.com/jsref/event_onclick.asp</a></p>
+</body>
+
+<script src="main.js"></script>   
+</html>
